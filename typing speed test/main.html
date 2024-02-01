@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section-title">
+        <h1>Speed Typing Test</h1>
+    </div>
+    <div class="section-game">
+        <input type="text" id="input-word" placeholder="Start typing here" oninput="check()" disabled>
+        <div class="wrapper-statistics">
+            <pre>Elapsed Time: <b id="labelElapsedTime">0 s</b></pre>
+            <pre>Average WPM: <b id="labelAverageWpm">0 wpm</b></pre>
+            <pre>Peak WPM: <b id="labelPeakWpm">0 wpm</b></pre>
+            <pre>CPM: <b id="labelCpm">0 cpm</b></pre>
+            <pre>Accuracy: <b id="labelAccuracy">0 %</b></pre>
+        </div>
+        <button class="btn-start" onclick="startGame()" id="startButton">Start Game</button>
+        <pre id="labelWord0"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
